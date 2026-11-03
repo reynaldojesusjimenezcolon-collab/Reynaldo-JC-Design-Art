@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bug Typography Project">
+	<title>Bug Typography</title>
+  <script src="https://use.typekit.net/ik/8UD2Rm1Q4g1bH1rzxFwGvU9OUMme49nvHoXWVkrWJKjfeCCgfFHN4UJLFRbh52jhWDjoZQiqFQJXZRMk5ebhwRbojc9aZ2qXFyGMJ6U3ScNt-AuyOAozicIKfAZuiYmkjPu3ifG4fHCgIMMjMPMfH6qJtKGbMg62JMJ7fbKzMsMMeMb6MKG4fJCgIMMjgkMfH6qJtkGbMg6FJMJ7fbKwMsMMegI6MKG4fJZmIMIjMkMfH6qJyB9bMs6IJMJ7fbKgmsMgeMS6MKG4fJFmIMIj2PMfH6qJym9bMs65JMJ7fbKfmsMgegI6MTMg7-7LD3j.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+		}
+	
+		.site-header {
+		width: 80%;
+		max-width: 1200px;
+		margin: 60px auto 0;
+		padding-bottom: 15px;
+		border-bottom: 4px solid #ffd000;
+	}
+	    .title {
+		max-width: 600px;
+		margin: 0 0 24px;
+		color: rgb(255, 208, 0);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	    .navigation {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+		font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+	}
+	    .navigation a {
+		color: white;
+		text-decoration: none;
+	}
+	    .navigation a:hover {
+		color: #ffd000;
+	}
+	a[href] {
+		display: inline-block;
+		transition: transform 180ms ease;
+	}
+	a[href]:hover {
+		transform: scale(1.06);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		a[href] {
+			transition: none;
+		}
+		a[href]:hover {
+			transform: none;
+		}
+	}
+
+        .art-course-work {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+		
+    }
+        .resume {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+    
+        .about {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+		
+		
+		.project-layout {
+			display: grid;
+			grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+			gap: 56px;
+			width: 84%;
+			max-width: 1280px;
+			margin: 40px auto 64px;
+			align-items: start;
+			margin-top: 70px;
+		}
+		.image {
+			display: grid;
+			gap: 28px;
+			margin: 0;
+		}
+		.image figure {
+			margin: 0;
+		}
+		.image img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.image figcaption {
+			margin-top: 8px;
+			color: #c7c7c7;
+			font-size: 14px;
+		}
+
+		.project-description {
+			position: sticky;
+			top: 36px;
+			padding-top: 4px;
+			font-family: "proxima-nova", sans-serif;
+			font-weight: 300;
+		}
+		.project-description h1 {
+			margin: 0 0 20px;
+			font-weight: 300;
+			font-family: "proxima-nova", sans-serif;
+			font-size: 24px;
+			color: #ffd000;
+			line-height: 1.15;
+			text-transform: uppercase;
+		}
+		.project-description p {
+			font-size: 15px;
+			line-height: 1.65;
+		}
+		.project-navigation {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 24px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid #555;
+			font-size: 15px;
+		}
+		.project-navigation a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.project-navigation a:hover {
+			color: #ffd000;
+		}
+		.project-navigation .arrow {
+			color: #ffd000;
+			font-size: 1.5em;
+			vertical-align: -2px;
+		}
+		
+		
+		@media (max-width: 700px) {
+            .site-header,
+			.project-layout {
+				width: 90%;
+			}
+			.project-layout {
+				grid-template-columns: 1fr;
+				gap: 32px;
+				margin-top: 24px;
+			}
+			.project-description {
+				position: static;
+				grid-row: 1;
+			}
+			.project-description h1 {
+				font-size: 25px;
+			}
+		}
+        @media (max-width: 450px) {
+		.site-header {
+			padding-bottom: 32px;
+		}
+		.title {
+			font-size: 32px;
+		}
+		.navigation {
+			justify-content: flex-start;
+			gap: 18px;
+		}
+        }
+	</style>
+</head>
+<body>
+	<header class="site-header">
+ 	<h1 class="title animate__animated animate__fadeInDown">Reynaldo JC: Design & Art</h1>
+<nav class="navigation animate__animated animate__fadeInDown">
+<a class="active art-course-work" href="../Index.html"> Creative Work</a> 
+<a class="resume" href="../Resume/Resume.html">Resume</a>
+<a class="about" href="../About/About.html">About</a>
+</nav>
+ 	</header>
+	<main class="project-layout">
+		<section class="image" aria-label="Bug Typography Images">
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/bugtypography1.png" alt="Bug 1 Image">
+			</figure>
+
+      <figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/bugtypography2.png" alt="Bug 2 Image">
+			</figure>
+
+      <figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/bugtypography3.png" alt="Bug 3 Image">
+			</figure>
+
+		</section>
+		<section class="project-description" aria-labelledby="project-title">
+			<nav class="project-navigation animate__animated animate__fadeInDown" aria-label="Project navigation">
+				<a href="../Work7/Work7.html"><span class="arrow" aria-hidden="true">&larr;</span> Previous</a>
+				<a href="../Work9/Work9.html">Next <span class="arrow" aria-hidden="true">&rarr;</span></a>
+			</nav>
+			<h1 id="project-title" class="animate__animated animate__fadeInDown">Bug Typography</h1>
+      
+		<p class="animate__animated animate__bounceIn"> 
+      For this typography based Illustrator project I had to create illustrations of insects using only the letters from each bug's name. I chose to design a beetle, caterpillar, and spider, and the challenge was figuring out how to manipulate and arrange the letterforms so they could function as both readable type and recognizable insect shapes.
+        </p>
+
+        <p class="animate__animated animate__bounceIn">
+           For the beetle design, I used repeated letters from the word “Beetle” to build the body, legs, and antennas. I experimented with rotation, scaling, and symmetry to make the composition feel balanced while still keeping the insect visually clear. Since the project relied completely on typography, I had to pay close attention to spacing, alignment, and negative space to help define the overall form.
+        </p>
+
+        <p class="animate__animated animate__bounceIn">
+          This assignment helped me better understand how typography can be used as illustration instead of just for communication. It also improved my skills in Illustrator by making me think more creatively about shape construction, composition, and how letterforms can become visual objects.
+
+        </p>
+
+		</section>
+	</main>
+</body>
+</html>

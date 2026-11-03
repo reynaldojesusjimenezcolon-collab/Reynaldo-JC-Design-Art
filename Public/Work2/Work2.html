@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Emboss project">
+	<title>Emboss</title>
+	<script src="https://use.typekit.net/ik/8UD2Rm1Q4g1bH1rzxFwGvU9OUMme49nvHoXWVkrWJKjfeCCgfFHN4UJLFRbh52jhWDjoZQiqFQJXZRMk5ebhwRbojc9aZ2qXFyGMJ6U3ScNt-AuyOAozicIKfAZuiYmkjPu3ifG4fHCgIMMjMPMfH6qJtKGbMg62JMJ7fbKzMsMMeMb6MKG4fJCgIMMjgkMfH6qJtkGbMg6FJMJ7fbKwMsMMegI6MKG4fJZmIMIjMkMfH6qJyB9bMs6IJMJ7fbKgmsMgeMS6MKG4fJFmIMIj2PMfH6qJym9bMs65JMJ7fbKfmsMgegI6MTMg7-7LD3j.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+		}
+	
+		.site-header {
+		width: 80%;
+		max-width: 1200px;
+		margin: 60px auto 0;
+		padding-bottom: 15px;
+		border-bottom: 4px solid #ffd000;
+	}
+	    .title {
+		max-width: 600px;
+		margin: 0 0 24px;
+		color: rgb(255, 208, 0);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	    .navigation {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+		font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+	}
+	    .navigation a {
+		color: white;
+		text-decoration: none;
+	}
+	    .navigation a:hover {
+		color: #ffd000;
+	}
+	a[href] {
+		display: inline-block;
+		transition: transform 180ms ease;
+	}
+	a[href]:hover {
+		transform: scale(1.06);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		a[href] {
+			transition: none;
+		}
+		a[href]:hover {
+			transform: none;
+		}
+	}
+
+        .art-course-work {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+		
+    }
+        .resume {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+    
+        .about {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+		
+		
+		.project-layout {
+			display: grid;
+			grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+			gap: 56px;
+			width: 84%;
+			max-width: 1280px;
+			margin: 40px auto 64px;
+			align-items: start;
+			margin-top: 70px;
+		}
+		.image {
+			display: grid;
+			gap: 28px;
+			margin: 0;
+		}
+		.image figure {
+			margin: 0;
+		}
+		.image img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.image figcaption {
+			margin-top: 8px;
+			color: #c7c7c7;
+			font-size: 14px;
+		}
+
+		.project-description {
+			position: sticky;
+			top: 36px;
+			padding-top: 4px;
+			font-family: "proxima-nova", sans-serif;
+			font-weight: 300;
+		}
+		.project-description h1 {
+			margin: 0 0 20px;
+			font-weight: 300;
+			font-family: "proxima-nova", sans-serif;
+			font-size: 24px;
+			color: #ffd000;
+			line-height: 1.15;
+			text-transform: uppercase;
+		}
+		.project-description p {
+			font-size: 15px;
+			line-height: 1.65;
+		}
+		.project-navigation {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 24px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid #555;
+			font-size: 15px;
+		}
+		.project-navigation a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.project-navigation a:hover {
+			color: #ffd000;
+		}
+		.project-navigation .arrow {
+			color: #ffd000;
+			font-size: 1.5em;
+			vertical-align: -2px;
+		}
+		
+		
+		@media (max-width: 700px) {
+            .site-header,
+			.project-layout {
+				width: 90%;
+			}
+			.project-layout {
+				grid-template-columns: 1fr;
+				gap: 32px;
+				margin-top: 24px;
+			}
+			.project-description {
+				position: static;
+				grid-row: 1;
+			}
+			.project-description h1 {
+				font-size: 25px;
+			}
+		}
+        @media (max-width: 450px) {
+		.site-header {
+			padding-bottom: 32px;
+		}
+		.title {
+			font-size: 32px;
+		}
+		.navigation {
+			justify-content: flex-start;
+			gap: 18px;
+		}
+        }
+	</style>
+</head>
+<body>
+	<header class="site-header">
+ 	<h1 class="title animate__animated animate__fadeInDown">Reynaldo JC: Design & Art</h1>
+<nav class="navigation animate__animated animate__fadeInDown">
+<a class="active art-course-work" href="../Index.html"> Creative Work</a> 
+<a class="resume" href="../Resume/Resume.html">Resume</a>
+<a class="about" href="../About/About.html">About</a>
+</nav>
+ 	</header>
+	<main class="project-layout">
+		<section class="image" aria-label="Emboss project image">
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/emboss.png" alt="Finished Emboss Project">
+			</figure>
+		
+		</section>
+		<section class="project-description" aria-labelledby="project-title">
+			<nav class="project-navigation animate__animated animate__fadeInDown" aria-label="Project navigation">
+				<a href="../Work1/Work1.html"><span class="arrow" aria-hidden="true">&larr;</span> Previous</a>
+				<a href="../Work3/Work3.html">Next <span class="arrow" aria-hidden="true">&rarr;</span></a>
+			</nav>
+			<h1 id="project-title" class="animate__animated animate__fadeInDown">Emboss</h1>
+		<p class="animate__animated animate__bounceIn"> For this project, we had to create an 8x8 single page print piece promoting the benefits of a specific animal. I chose a giant panda. The twist was that we had to make the animal's name a blind emboss, meaning raised texture with no ink, just to show a client what it would look like after printing. 
+        </p>
+
+        <p class="animate__animated animate__bounceIn">
+            I designed a little guide called 'Guide to Caring for a Panda.' It's honest. Pandas are high maintenance, messy, and expensive. They need a massive enclosure, 20 to 40 pounds of bamboo daily, and they produce up to 50 pounds of waste a day. But I also wanted to remind people that owning one, if you even could, is really a conservation effort. I pulled a panda image from online, built everything in InDesign, and used Photoshop to create that embossed look on the title.
+        </p>
+
+		</section>
+	</main>
+</body>
+</html>

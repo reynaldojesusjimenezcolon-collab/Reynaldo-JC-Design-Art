@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Silkscreen print project and process images">
+	<title>Silk Screen Press</title>
+	<script src="https://use.typekit.net/ik/8UD2Rm1Q4g1bH1rzxFwGvU9OUMme49nvHoXWVkrWJKjfeCCgfFHN4UJLFRbh52jhWDjoZQiqFQJXZRMk5ebhwRbojc9aZ2qXFyGMJ6U3ScNt-AuyOAozicIKfAZuiYmkjPu3ifG4fHCgIMMjMPMfH6qJtKGbMg62JMJ7fbKzMsMMeMb6MKG4fJCgIMMjgkMfH6qJtkGbMg6FJMJ7fbKwMsMMegI6MKG4fJZmIMIjMkMfH6qJyB9bMs6IJMJ7fbKgmsMgeMS6MKG4fJFmIMIj2PMfH6qJym9bMs65JMJ7fbKfmsMgegI6MTMg7-7LD3j.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+        .site-header {
+		width: 80%;
+		max-width: 1200px;
+		margin: 60px auto 0;
+		padding-bottom: 15px;
+		border-bottom: 4px solid #ffd000;
+	}
+	    .title {
+		max-width: 600px;
+		margin: 0 0 24px;
+		color: rgb(255, 208, 0);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	    .navigation {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+		font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+	}
+	    .navigation a {
+		color: white;
+		text-decoration: none;
+	}
+	    .navigation a:hover {
+		color: #ffd000;
+	}
+	a[href] {
+		display: inline-block;
+		transition: transform 180ms ease;
+	}
+	a[href]:hover {
+		transform: scale(1.06);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		a[href] {
+			transition: none;
+		}
+		a[href]:hover {
+			transform: none;
+		}
+	}
+
+        .art-course-work {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+		
+    }
+        .resume {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+    
+        .about {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+
+		.page-header {
+			width: 84%;
+			max-width: 1280px;
+			margin: 36px auto 0;
+		}
+		
+		.project-layout {
+			display: grid;
+			grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+			gap: 56px;
+			width: 84%;
+			max-width: 1280px;
+			margin: 36px auto 64px;
+			align-items: start;
+		}
+		.image-list {
+			display: grid;
+			gap: 28px;
+			margin: 0;
+		}
+		.image-list figure {
+			margin: 0;
+		}
+		.image-list img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.image-list figcaption {
+			margin-top: 8px;
+			color: #c7c7c7;
+			font-size: 14px;
+		}
+		.project-description {
+			position: sticky;
+			top: 36px;
+			padding-top: 4px;
+			font-family: "proxima-nova", sans-serif;
+			font-weight: 300;
+		}
+		.project-description h1 {
+			margin: 0 0 20px;
+			color: #ffd000;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+		.project-description p {
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 1.8;
+		}
+		.project-navigation {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 24px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid #555;
+			font-size: 15px;
+		}
+		.project-navigation a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.project-navigation a:hover {
+			color: #ffd000;
+		}
+		.project-navigation .arrow {
+			color: #ffd000;
+			font-size: 1.5em;
+			vertical-align: -2px;
+		}
+		@media (max-width: 700px) {
+			.page-header,
+			.project-layout {
+				width: 90%;
+			}
+			.project-layout {
+				grid-template-columns: 1fr;
+				gap: 32px;
+				margin-top: 24px;
+			}
+			.project-description {
+				position: static;
+				grid-row: 1;
+			}
+			.project-description h1 {
+				font-size: 24px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+ 	<h1 class="title animate__animated animate__fadeInDown">Reynaldo JC: Design & Art</h1>
+<nav class="navigation animate__animated animate__fadeInDown">
+<a class="active art-course-work" href="../Index.html">Creative Work</a> 
+<a class="resume" href="../Resume/Resume.html">Resume</a>
+<a class="about" href="../About/About.html">About</a>
+</nav>
+ 	</header>
+	<main class="project-layout">
+		<section class="image-list" aria-label="Silkscreen project images">
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/silkscreenpress.png" alt="Finished silkscreen press">
+			</figure>
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/silkscreenpress1.png" alt="Silkscreen press image 1">
+			</figure>
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/silkscreenpress2.png" alt="Silkscreen press image 2">
+			
+			</figure>
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/silkscreenpress3.png" alt="Silkscreen press image 3">
+			</figure>
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/silkscreenpress4.png" alt="Silkscreen press image 4">
+			</figure>
+		</section>
+		<section class="project-description" aria-labelledby="project-title">
+			<nav class="project-navigation animate__animated animate__fadeInDown" aria-label="Project navigation">
+				<a href="../Work2/Work2.html">Next <span class="arrow" aria-hidden="true">&rarr;</span></a>
+			</nav>
+			<h1 id="project-title" class="animate__animated animate__fadeInDown">Silk Screen Press</h1>
+			<p class="animate__animated animate__bounceIn">This would have to be my favorite piece of work that I've done thus far through all the art courses I have taken these past semesters. For this project, we had to design a T-shirt using the silk screen process. The silk screen is all about bold, solid shapes so you can't really do fine details with it, so you have to think in layers. We were told to pick a favorite thing that actually means something to us. I chose the famous artist Jean-Michel Basquiat. I went to an art exhibit for the first time ever, and it was a showcase of some of his original pieces. That experience stuck with me. So for this assignment, I took photos I had personally captured of his artwork along with an image of himself and another piece of art work of his and used them to create a brand new piece kind of a collage style homage to a legend.
+</p>
+					</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Resume">
+	<title>Resume</title>
+  <script src="https://use.typekit.net/ik/8UD2Rm1Q4g1bH1rzxFwGvU9OUMme49nvHoXWVkrWJKjfeCCgfFHN4UJLFRbh52jhWDjoZQiqFQJXZRMk5ebhwRbojc9aZ2qXFyGMJ6U3ScNt-AuyOAozicIKfAZuiYmkjPu3ifG4fHCgIMMjMPMfH6qJtKGbMg62JMJ7fbKzMsMMeMb6MKG4fJCgIMMjgkMfH6qJtkGbMg6FJMJ7fbKwMsMMegI6MKG4fJZmIMIjMkMfH6qJyB9bMs6IJMJ7fbKgmsMgeMS6MKG4fJFmIMIj2PMfH6qJym9bMs65JMJ7fbKfmsMgegI6MTMg7-7LD3j.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<style>
+* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+		}
+	
+		.site-header {
+		width: 80%;
+		max-width: 1200px;
+		margin: 60px auto 0;
+		padding-bottom: 15px;
+		border-bottom: 4px solid #ffd000;
+	}
+	    .title {
+		max-width: 600px;
+		margin: 0 0 24px;
+		color: rgb(255, 208, 0);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	    .navigation {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+		font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+	}
+	    .navigation a {
+		color: white;
+		text-decoration: none;
+	}
+	    .navigation a:hover {
+		color: #ffd000;
+	}
+	a[href] {
+		display: inline-block;
+		transition: transform 180ms ease;
+	}
+	a[href]:hover {
+		transform: scale(1.06);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		a[href] {
+			transition: none;
+		}
+		a[href]:hover {
+			transform: none;
+		}
+	}
+
+        .art-course-work {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+		
+    }
+        .resume {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+    
+        .about {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+		
+		
+		.project-layout {
+			width: min(90%, 800px);
+			margin: 70px auto 64px;
+			font-family: "proxima-nova", sans-serif;
+			font-weight: 300;
+		}
+		.project-description {
+			text-align: left;
+		}
+		.project-description h1 {
+			margin: 0 0 20px;
+			font-weight: 300;
+			font-family: "proxima-nova", sans-serif;
+			font-size: 24px;
+			color: #ffd000;
+			line-height: 1.15;
+			text-transform: uppercase;
+		}
+		.project-description p {
+			font-size: 15px;
+			line-height: 1.65;
+		}
+		.resume-contact {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px 20px;
+			margin: 0 0 28px;
+			font-size: 15px;
+		}
+		.resume-contact a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.resume-contact a:hover {
+			color: #ffd000;
+		}
+		.resume-section {
+			margin-top: 26px;
+		}
+		.resume-section h2 {
+			margin: 0 0 12px;
+			padding-bottom: 6px;
+			border-bottom: 1px solid #ffd000;
+			color: #ffd000;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 19px;
+			text-transform: uppercase;
+      font-weight: 300;
+		}
+		.resume-section p,
+		.resume-section li {
+			font-size: 15px;
+			line-height: 1.55;
+		}
+		.resume-section p {
+			margin: 6px 0;
+		}
+		.resume-entry {
+			margin-bottom: 22px;
+		}
+		.resume-entry-heading {
+			display: flex;
+			justify-content: space-between;
+			gap: 12px;
+			font-size: 16px;
+		}
+		.resume-entry ul {
+			margin: 8px 0 0;
+			padding-left: 22px;
+		}
+		.resume-entry li + li,
+		.resume-skills li + li {
+			margin-top: 6px;
+		}
+		.resume-skills {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 0 32px;
+		}
+		.resume-skills ul {
+			margin: 6px 0 0;
+			padding-left: 22px;
+		}
+		
+		@media (max-width: 700px) {
+			.project-description h1 {
+				font-size: 25px;
+			}
+			.resume-skills {
+				grid-template-columns: 1fr;
+			}
+			.resume-entry-heading {
+				flex-direction: column;
+				gap: 2px;
+			}
+		}
+        @media (max-width: 450px) {
+		.site-header {
+			padding-bottom: 32px;
+		}
+		.title {
+			font-size: 32px;
+		}
+		.navigation {
+			justify-content: flex-start;
+			gap: 18px;
+		}
+        }
+</style>
+</head>
+<body>
+<header class="site-header">
+ 	<h1 class="title animate__animated animate__fadeInDown">Reynaldo JC: Design & Art</h1>
+<nav class="navigation animate__animated animate__fadeInDown">
+<a class="active art-course-work" href="../Index.html"> Creative Work</a> 
+<a class="resume" href="../Resume/Resume.html">Resume</a>
+<a class="about" href="../About/About.html">About</a>
+</nav>
+</header>
+  <main class="project-layout">
+ 		<section class="project-description animate__animated animate__fadeInDown" aria-labelledby="project-title">
+ 			<h1 id="project-title">Resume</h1>
+			<div class="resume-contact" aria-label="Contact information">
+				<a href="https://www.linkedin.com/in/ReynaldoJimenezColon">LinkedIn.com/in/ReynaldoJimenezColon</a>
+				<a>(347) 961-5648</a>
+				<a>Reynaldo.jesus.jimenezcolon@gmail.com</a>
+			</div>
+
+			<section class="resume-section" aria-labelledby="education-title">
+				<h2 id="education-title">Education</h2>
+				<div class="resume-entry">
+					<div class="resume-entry-heading">
+						<strong>Baruch College, Zicklin School of Business</strong>
+						<span>Expected graduation: Spring 2027</span>
+					</div>
+					<p>Bachelor of Business Administration in Accountancy, CPA Eligible</p>
+					<p><strong>Relevant Coursework:</strong> Financial Accounting, Accounting Information Systems, Cost Accounting, Predictive Analytics, Business Statistics, Principles of Accounting</p>
+				</div>
+			</section>
+
+			<section class="resume-section" aria-labelledby="experience-title">
+				<h2 id="experience-title">Experience</h2>
+				<div class="resume-entry">
+					<div class="resume-entry-heading">
+						<strong>Western Beef, Inc. — Bronx, NY</strong>
+						<span>Jul 2022 - Oct. 2023</span>
+					</div>
+					<p><strong>Cashier &amp; Dairy Department Associate</strong></p>
+					<ul>
+						<li>Delivered exceptional customer service, achieving a 95% satisfaction rating in customer feedback surveys, and assisted with merchandise selections, contributing to an increase in upsell revenue.</li>
+						<li>Processed an average of 50-100 client transactions daily, handling large sums of cash, credit, and digital payments with 100% accuracy while maintaining compliance with financial company policies.</li>
+						<li>Restocked and organized merchandise inventory, reducing out-of-stock instances, ensuring pricing accuracy, and verifying expiration dates to maintain 100% compliance with quality standards.</li>
+						<li>Maintained a clean and organized checkout area, improving client wait times and contributing to a more efficient shopping experience.</li>
+					</ul>
+				</div>
+				<div class="resume-entry">
+					<div class="resume-entry-heading">
+						<strong>F and K Food Center — Bronx, NY</strong>
+						<span>Jul 2020 – Sep. 2020</span>
+					</div>
+					<p><strong>Cashier &amp; Stock Clerk</strong></p>
+					<ul>
+						<li>Operated the cash register and processed 60+ customer transactions daily with 100% accuracy, ensuring seamless payment processing and compliance with financial company protocols.</li>
+						<li>Managed inventory replenishment across shelves, racks, cases, bins, and tables, ensuring 100% product availability during peak shopping hours and improving sales floor efficiency.</li>
+						<li>Unpacked, sorted, and organized 200+ new merchandise items weekly, ensuring accurate placement according to store layout guidelines.</li>
+						<li>Maintained cleanliness and organization of checkout areas and sales floors, contributing to an improved store appearance and enhancing client experience and satisfaction.</li>
+					</ul>
+				</div>
+			</section>
+
+			<div class="resume-skills">
+				<section class="resume-section" aria-labelledby="technical-skills-title">
+					<h2 id="technical-skills-title">Technical Skills</h2>
+					<ul>
+						<li>Proficient in Microsoft Suite (Excel, Word, PowerPoint, Outlook, Microsoft Teams)</li>
+						<li>Skilled in Google Workspace (Docs, Sheets, Slides, Gmail)</li>
+						<li>Experienced with Canva and Adobe Creative Suite (InDesign, Illustrator, Acrobat)</li>
+					</ul>
+				</section>
+				<section class="resume-section" aria-labelledby="language-skills-title">
+					<h2 id="language-skills-title">Language Skills</h2>
+					<ul>
+						<li>Fluent in Spanish</li>
+					</ul>
+				</section>
+				<section class="resume-section" aria-labelledby="additional-skills-title">
+					<h2 id="additional-skills-title">Additional Skills</h2>
+					<ul>
+						<li>Strong organizational and time management skills</li>
+						<li>Excellent customer service and communication abilities</li>
+						<li>Detail-oriented with a focus on accuracy and compliance</li>
+					</ul>
+				</section>
+				<section class="resume-section" aria-labelledby="hobbies-title">
+					<h2 id="hobbies-title">Hobbies</h2>
+					<ul>
+						<li>Avid chess player</li>
+						<li>Passionate about understanding and creating art</li>
+					</ul>
+				</section>
+			</div>
+ 		</section>
+	</main>
+</body>
+</html>

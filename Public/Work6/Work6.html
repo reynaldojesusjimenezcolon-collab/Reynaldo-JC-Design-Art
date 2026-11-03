@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Color Models Project">
+	<title>Color Models</title>
+  <script src="https://use.typekit.net/ik/8UD2Rm1Q4g1bH1rzxFwGvU9OUMme49nvHoXWVkrWJKjfeCCgfFHN4UJLFRbh52jhWDjoZQiqFQJXZRMk5ebhwRbojc9aZ2qXFyGMJ6U3ScNt-AuyOAozicIKfAZuiYmkjPu3ifG4fHCgIMMjMPMfH6qJtKGbMg62JMJ7fbKzMsMMeMb6MKG4fJCgIMMjgkMfH6qJtkGbMg6FJMJ7fbKwMsMMegI6MKG4fJZmIMIjMkMfH6qJyB9bMs6IJMJ7fbKgmsMgeMS6MKG4fJFmIMIj2PMfH6qJym9bMs65JMJ7fbKfmsMgegI6MTMg7-7LD3j.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+		}
+	
+		.site-header {
+		width: 80%;
+		max-width: 1200px;
+		margin: 60px auto 0;
+		padding-bottom: 15px;
+		border-bottom: 4px solid #ffd000;
+	}
+	    .title {
+		max-width: 600px;
+		margin: 0 0 24px;
+		color: rgb(255, 208, 0);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+	    .navigation {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+		font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+	}
+	    .navigation a {
+		color: white;
+		text-decoration: none;
+	}
+	    .navigation a:hover {
+		color: #ffd000;
+	}
+	a[href] {
+		display: inline-block;
+		transition: transform 180ms ease;
+	}
+	a[href]:hover {
+		transform: scale(1.06);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		a[href] {
+			transition: none;
+		}
+		a[href]:hover {
+			transform: none;
+		}
+	}
+
+        .art-course-work {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+		
+    }
+        .resume {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+    
+        .about {
+        
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 300;
+		font-size: 100%;
+    }
+		
+		
+		.project-layout {
+			display: grid;
+			grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+			gap: 56px;
+			width: 84%;
+			max-width: 1280px;
+			margin: 40px auto 64px;
+			align-items: start;
+			margin-top: 70px;
+		}
+		.image {
+			display: grid;
+			gap: 28px;
+			margin: 0;
+		}
+		.image figure {
+			margin: 0;
+		}
+		.image img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.image figcaption {
+			margin-top: 8px;
+			color: white;
+			font-family: "proxima-nova", sans-serif;
+		font-weight: bold;
+		font-size: 100%;
+		}
+
+		.project-description {
+			position: sticky;
+			top: 36px;
+			padding-top: 4px;
+			font-family: "proxima-nova", sans-serif;
+			font-weight: 300;
+		}
+		.project-description h1 {
+			margin: 0 0 20px;
+			font-weight: 300;
+			font-family: "proxima-nova", sans-serif;
+			font-size: 24px;
+			color: #ffd000;
+			line-height: 1.15;
+			text-transform: uppercase;
+		}
+		.project-description p {
+			font-size: 15px;
+			line-height: 1.65;
+		}
+		.project-navigation {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 24px;
+			padding-bottom: 14px;
+			border-bottom: 1px solid #555;
+			font-size: 15px;
+		}
+		.project-navigation a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.project-navigation a:hover {
+			color: #ffd000;
+		}
+		.project-navigation .arrow {
+			color: #ffd000;
+			font-size: 1.5em;
+			vertical-align: -2px;
+		}
+		
+		
+		@media (max-width: 700px) {
+            .site-header,
+			.project-layout {
+				width: 90%;
+			}
+			.project-layout {
+				grid-template-columns: 1fr;
+				gap: 32px;
+				margin-top: 24px;
+			}
+			.project-description {
+				position: static;
+				grid-row: 1;
+			}
+			.project-description h1 {
+				font-size: 25px;
+			}
+		}
+        @media (max-width: 450px) {
+		.site-header {
+			padding-bottom: 32px;
+		}
+		.title {
+			font-size: 32px;
+		}
+		.navigation {
+			justify-content: flex-start;
+			gap: 18px;
+		}
+        }
+
+    
+    
+	</style>
+</head>
+<body>
+	<header class="site-header">
+ 	<h1 class="title animate__animated animate__fadeInDown">Reynaldo JC: Design & Art</h1>
+<nav class="navigation animate__animated animate__fadeInDown">
+<a class="active art-course-work" href="../Index.html"> Creative Work</a> 
+<a class="resume" href="../Resume/Resume.html">Resume</a>
+<a class="about" href="../About/About.html">About</a>
+</nav>
+ 	</header>
+	<main class="project-layout">
+		<section class="image" aria-label="Color Model Images">
+			<figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/colormodel.png" alt="Finished Color Model Image"><figcaption class="animate__animated animate__fadeInDown">Original Image</figcaption>
+			</figure>
+
+      <figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/duotonecolormodel.png" alt="Finished Duo Tone Color Model Image"><figcaption class="animate__animated animate__fadeInDown">Duotone Color Model</figcaption>
+			</figure>
+
+      <figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/1colormodel.png" alt="Finished 1Color Model Image"><figcaption class="animate__animated animate__fadeInDown">1 Color Model</figcaption>
+			</figure>
+
+      <figure>
+				<img class="animate__animated animate__fadeInDown" src="../img/4colormodel.png" alt="Finished 4Color Model Image"><figcaption class="animate__animated animate__fadeInDown">4 Color Model</figcaption>
+			</figure>
+
+		</section>
+		<section class="project-description" aria-labelledby="project-title">
+			<nav class="project-navigation animate__animated animate__fadeInDown" aria-label="Project navigation">
+				<a href="../Work5/Work5.html"><span class="arrow" aria-hidden="true">&larr;</span> Previous</a>
+				<a href="../Work7/Work7.html">Next <span class="arrow" aria-hidden="true">&rarr;</span></a>
+			</nav>
+			<h1 id="project-title" class="animate__animated animate__fadeInDown">Color Models</h1>
+		<p class="animate__animated animate__bounceIn"> 
+        For the Duotone Color Model, I had to use a photo taken by me and transform it using two tones. To create a more dramatic and surreal effect I experimented with symmetry and reflections to make the composition feel more layered and visually interesting. I also had to include a word within the composition, so I used the word “Summer” to connect with the calm atmosphere of the water and clouds.  This part of the assignment helped me learn how color combinations and layout choices can completely change the mood of an image.
+        </p>
+
+        <p class="animate__animated animate__bounceIn">
+            For the 1 Color Model, I had to take the photo and turn it into a one-color model while also incorporating posterization into parts of the image. I chose a landscape photo and experimented with different shades of purple to create contrast and depth while still keeping the image visually simple. I also had to include a word within the composition, so I used the word “Summer” as part of the design to keep consistency throughout the project. This assignment helped me understand how reducing an image to one color can still create a strong visual impact through value and composition.
+
+        </p>
+
+        <p class="animate__animated animate__bounceIn">
+            For the final section, I created a four-color model using the same original photograph. I focused on layering text and transparency while using multiple tones from the image to create depth and movement across the composition. I repeated the word “Summer” throughout the design to make typography a major visual element instead of just text. This assignment taught me how combining multiple colors, opacity, and repetition can create a more dynamic and balanced digital composition.
+
+        </p>
+
+		</section>
+	</main>
+</body>
+</html>
